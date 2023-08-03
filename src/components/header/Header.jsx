@@ -11,7 +11,10 @@ const Header = () => {
       </div>
 
       <div>
-        <Link to="">
+        <Link
+          to="https://github.com/StepAsideLiL/task-management-app-reactjs"
+          target="_blank"
+        >
           <BsGithub className="text-4xl" />
         </Link>
       </div>
