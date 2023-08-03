@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 
-export const useDynamicRouter = (customTitle) => {
+const useDynamicTitle = (customTitle) => {
   useEffect(() => {
     document.title = customTitle;
   }, [customTitle]);
 };
+
+export default useDynamicTitle;

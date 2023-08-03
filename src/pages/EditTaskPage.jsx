@@ -3,8 +3,11 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../utils/axios-instance";
 import { useEffect } from "react";
+import useDynamicTitle from "../hooks/useDynamicTitle";
 
 const EditTaskPage = () => {
+  useDynamicTitle("Edit Task - Task Management App");
+
   const {
     register,
     handleSubmit,

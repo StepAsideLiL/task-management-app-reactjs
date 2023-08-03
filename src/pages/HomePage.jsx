@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { useDynamicRouter } from "../hooks/useDynamicRouter";
 import { BsPlus } from "react-icons/bs";
 import AllTaskList from "../components/home-page/AllTaskList";
+import useDynamicTitle from "../hooks/useDynamicTitle";
 
 const HomePage = () => {
-  useDynamicRouter("Home - Task Management App");
+  useDynamicTitle("Home - Task Management App");
 
   return (
     <main className="container max-w-3xl mx-auto space-y-5">

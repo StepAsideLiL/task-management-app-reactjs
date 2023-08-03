@@ -2,8 +2,11 @@ import { useForm } from "react-hook-form";
 import api from "../utils/axios-instance";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import useDynamicTitle from "../hooks/useDynamicTitle";
 
 const AddTaskPage = () => {
+  useDynamicTitle("Add Task - Task Management App");
+
   const {
     register,
     handleSubmit,
