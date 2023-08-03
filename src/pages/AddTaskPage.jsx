@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import useDynamicTitle from "../hooks/useDynamicTitle";
 
 const AddTaskPage = () => {
-  useDynamicTitle("Add Task - Task Management App");
+  useDynamicTitle("Add New Task - Task Management App");
 
   const {
     register,
